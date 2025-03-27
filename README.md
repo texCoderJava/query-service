@@ -19,53 +19,53 @@ The Multi-Module Query Service includes several discrete yet interrelated module
 
 ## Key objectives:
 
-A single codebase for multiple data-centric services.
+- A single codebase for multiple data-centric services.
 
-Consistent patterns and practices enforced by the commons module.
+- Consistent patterns and practices enforced by the commons module.
 
-Streamlined development, testing, and deployment through a parent POM and shared dependencies.
+- Streamlined development, testing, and deployment through a parent POM and shared dependencies.
 
 ## Modules
 
 ### commons
 
-Purpose: Holds shared utilities, DTOs, common exception handling, and logic shared across all other modules.
+- Purpose: Holds shared utilities, DTOs, common exception handling, and logic shared across all other modules.
 
-Key Contents:
+### Key Contents:
 
-Common POJOs, data transfer objects, constants, exception classes.
+- Common POJOs, data transfer objects, constants, exception classes.
 
-Helper methods for logging, transformations, or validations.
+- Helper methods for logging, transformations, or validations.
 
 ### kafka-service
 
-Purpose: Interacts with Apache Kafka to either consume or produce data streams.
+- Purpose: Interacts with Apache Kafka to either consume or produce data streams.
 
-Key Responsibilities:
+### Key Responsibilities:
 
-Establishing Kafka consumer/producer configurations.
+- Establishing Kafka consumer/producer configurations.
 
-Reading from or writing to specified Kafka topics.
+- Reading from or writing to specified Kafka topics.
 
 ### redis-service
 
-Purpose: Connects to Redis for caching and real-time data lookups.
+- Purpose: Connects to Redis for caching and real-time data lookups.
 
-Key Responsibilities:
+### Key Responsibilities:
 
-Basic CRUD operations on Redis.
+- Basic CRUD operations on Redis.
 
-Potential usage of pub/sub for real-time messaging.
+- Potential usage of pub/sub for real-time messaging.
 
 ### mongo-service
 
-Purpose: Manages reactive operations to a MongoDB instance.
+- Purpose: Manages reactive operations to a MongoDB instance.
 
-Key Responsibilities:
+### Key Responsibilities:
 
-Creating, reading, updating, and deleting documents in MongoDB in a reactive, non-blocking manner.
+- Creating, reading, updating, and deleting documents in MongoDB in a reactive, non-blocking manner.
 
-Implementing advanced queries and aggregations if needed.
+- Implementing advanced queries and aggregations if needed.
 
 ### main-service (sometimes also named query-service or simply the aggregator)
 
