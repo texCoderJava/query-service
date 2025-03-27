@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+redis:
+  request:
+    queue:
+      name: requests
+
+spring:
+  webflux:
+    base-path: /rs
+  rsocket:
+    server:
+      port: 8085

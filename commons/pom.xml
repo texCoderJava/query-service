@@ -1,0 +1,60 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <artifactId>commons</artifactId>
+
+  <dependencies>
+    <dependency>
+      <artifactId>spring-boot-starter</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>jackson-core</artifactId>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>jackson-databind</artifactId>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>commons-lang3</artifactId>
+      <groupId>org.apache.commons</groupId>
+      <version>${apache-commons-lang.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.vavr</groupId>
+      <artifactId>vavr</artifactId>
+      <version>${vavr.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
+    </dependency>
+  </dependencies>
+
+  <groupId>com.sbr</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>qs</artifactId>
+    <groupId>com.sbr</groupId>
+    <relativePath>../pom.xml</relativePath>
+    <version>0.0.2-SNAPSHOT</version>
+  </parent>
+
+  <properties>
+    <apache-commons-lang.version>3.12.0</apache-commons-lang.version>
+    <jackson.version>2.15.2</jackson.version>
+    <java.version>17</java.version>
+    <vavr.version>0.10.4</vavr.version>
+  </properties>
+
+  <version>0.0.2-SNAPSHOT</version>
+
+
+</project>

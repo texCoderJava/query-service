@@ -1,0 +1,18 @@
+server:
+  port: 8082
+  shutdown: graceful
+
+redis:
+  request:
+    queue:
+      name: requests
+
+spring:
+  redis:
+    port: 6379
+    host: localhost
+  webflux:
+    base-path: /rs
+  rsocket:
+    server:
+      port: 8085

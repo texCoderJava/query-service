@@ -1,0 +1,20 @@
+server:
+  port: 8086
+  shutdown: graceful
+
+mongo:
+  request:
+    collection:
+      name: requests
+
+spring:
+  webflux:
+    base-path: /ms
+  rsocket:
+    server:
+      port: 8087
+  data:
+    mongodb:
+      database: requests-db
+      port: 27017
+      host: localhost
